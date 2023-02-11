@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+header {
+    background-color: #353030;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 25px;
+    width: 20%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    transition: 0.6s;
+}
+
+.nav a:hover {
+    color: #c00d0d;
+}
+
+.title {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: 200;
+}
+
+.main-content {
+    min-height: 100vh;
+    width: 100%;
+    flex: 0 1 auto;
+    display: grid;
+    place-content: center;
+    gap: 20px 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "boxe crossfit natacao"
+    "roupas basquete corrida"
+    "surf trilha tenis";
+    padding: 100px;
+}
+
+.item {
+    width: 300px;
+    border: 2px solid white;
+    transition: 0.4s;
+}
+
+.item:hover {
+    border: 2px solid black;
+}
+
+.sport-img, .other-sports-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.boxe-img, .roupas-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.boxe {
+    grid-area: boxe;
+}
+
+.crossfit {
+    grid-area: crossfit;
+}
+
+.natacao {
+    grid-area: natacao;
+}
+
+.roupas {
+    grid-area: roupas;
+}
+
+.basquete {
+    grid-area: basquete;
+}
+
+.corrida {
+   grid-area: corrida; 
+}
+
+.surf {
+    grid-area: surf;
+}
+
+.trilha {
+    grid-area: trilha;
+}
+
+.tenis {
+    grid-area: tenis;
+}
+
+
+.other-sports {
+    background-color: #353030;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px;
+    margin-bottom: 30px;
+}
+
+.item-other {
+    width: 300px;
+    border: 2px solid #353030;
+    transition: 0.4s;
+}
+
+.item-other:hover {
+    border: 2px solid white;
+}
+
+.title-princ-other-sports {
+    background-color: #353030;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.title-other-sports {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+} 
+
+.footer {
+    background-color: #353030;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.top {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.top:hover {
+    color: #c00d0d;
+}
+
